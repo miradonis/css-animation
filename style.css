@@ -165,30 +165,8 @@ body {
 
 
 /* LINIEN MIT SCANNER */
-.line1 {
-  position: absolute;
-  background-color: rgb(4, 36, 36);
-  box-shadow: 0px 0px 12px aqua;
-  width: 4px;
-  height: calc(99% - 10px);
-  top: 1vh;
-  left: 2vw;
-  border-radius: 50%;
-  overflow: hidden;
-}
 
-.line1 .scanner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: white;
-    width: 100%;
-    height: 20px;
-    border-radius: 50%;
-    animation: scanner-loop 3s ease-in-out infinite;
-  }
-
-  .line2 {
+  .line1 {
     position: absolute;
     background-color: rgb(4, 36, 36);
     box-shadow: 0px 0px 12px aqua;
@@ -200,7 +178,7 @@ body {
     overflow: hidden;
   }
 
-  .line2 .scanner {
+  .line1 .scanner {
     position: absolute;
     top: 0;
     left: 0;
@@ -213,10 +191,11 @@ body {
 
 
 
-
 .line .scanner
 {
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(255, 255, 255, 0), 
+                              rgba(255, 255, 255, 1),
+                              rgba(255, 255, 255, 0));
   height: 50%;
 }
 @keyframes scanner-loop
