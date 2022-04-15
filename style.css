@@ -1,0 +1,158 @@
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+
+.ball1 {
+    position: absolute;
+    top: 13vh;
+    left: 8vw;
+    width: 9vw;
+    height: 18vh;
+    border-radius: 50%;
+    box-shadow:
+      inset 0 0 50px #fff,
+      inset 20px 0 80px #f0f,
+      inset -20px 0 80px #0ff,
+      inset 20px 0 300px #f0f,
+      inset -20px 0 300px #0ff,
+      0 0 50px #fff,
+      -10px 0 80px #f0f,
+      10px 0 80px #0ff;
+  }
+
+  .ball2 {
+    position: absolute;
+    top: 10vh;
+    left: 75vw;
+    width: 5vw;
+    height: 10vh;
+    border-radius: 50%;
+    box-shadow:
+      inset 0 0 40px rgb(229, 230, 201),
+      inset 20px 0 80px rgb(197, 250, 72),
+      inset -20px 0 80px rgb(0, 255, 55),
+      inset 20px 0 300px rgb(13, 99, 17),
+      inset -20px 0 300px rgb(255, 0, 0),
+      0 0 50px #fff,
+      -10px 0 80px rgb(217, 255, 0),
+      10px 0 80px rgb(15, 82, 82);
+  }
+
+  .ball3 {
+    position: absolute;
+    top: 40vh;
+    left: 90vw;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50%;
+    box-shadow:
+      inset 0 0 50px #fff,
+      inset 20px 0 80px rgb(255, 0, 43),
+      inset -20px 0 80px rgb(255, 115, 0),
+      inset 20px 0 300px #f0f,
+      inset -20px 0 300px #0ff,
+      0 0 60px rgb(255, 132, 132),
+      -10px 0 80px rgb(255, 0, 43),
+      10px 0 80px #0ff;
+  }
+
+  .ball4 {
+    position: absolute;
+    top: 75vh;
+    left: 21vw;
+    width: 4.2vw;
+    height: 9vh;
+    border-radius: 50%;
+    box-shadow:
+      inset 0 0 50px #fff,
+      inset 20px 0 80px rgb(0, 204, 255),
+      inset -20px 0 80px #0ff,
+      inset 20px 0 300px #f0f,
+      inset -20px 0 300px #0ff,
+      0 0 50px #fff,
+      -10px 0 80px rgb(55, 0, 255),
+      10px 0 80px #0ff;
+  }
+
+
+.element1 {
+    height: 40vh;
+    width: 10vw;
+    background-image: linear-gradient( #c0fb2d, #ff724c, #4efd54);
+    position: absolute;
+    margin: 13vw 0 0 34vw;
+    transform: skewY(12deg);
+    
+}
+
+.element2 {
+    height: 40vh;
+    width: 10vw;
+    background-image: linear-gradient( #dd85d7, #41fdfe, #ff6f52);
+    position: absolute;
+    margin: 13vw 0 0 47vw; 
+    transform: skewY(-12deg);   
+}
+
+.element3 {
+    height: 40vh;
+    width: 10vw;
+    background-image: linear-gradient( #ad0afd, #fffe7a, #ff474c);
+    position: absolute;
+    margin: 13vw 0 0 60vw;
+    transform: skewY(12deg);    
+}
+
+.text1, .text2, .text3 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 12vh;
+}
+
+.glas-container1 {
+    background-color: rgba(240, 248, 255, 0.178);
+    height: 42vh;
+    width: 12vw;
+    position: absolute;
+    margin-top: 25.5vh;
+    margin-left: 32.9vw;
+    backdrop-filter: blur(2px);
+    border-top: 1px solid rgba(255, 255, 255, 0.294);
+    border-left: 1px solid rgba(255, 255, 255, 0.294);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.09);
+    transform: skewY(12deg); 
+    
+}
+
+.glas-container2 {
+    background-color: rgba(240, 248, 255, 0.295);
+    height: 42vh;
+    width: 12vw;
+    position: absolute;
+    margin-top: 25.5vh;
+    margin-left: 45.9vw;
+    backdrop-filter: blur(1px);
+    border-top: 1px solid rgba(255, 255, 255, 0.294);
+    border-left: 1px solid rgba(255, 255, 255, 0.294);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.09);
+    transform: skewY(-12deg); 
+    
+}
+
+.glas-container3 {
+    background-color: rgba(240, 248, 255, 0.089);
+    height: 42vh;
+    width: 12vw;
+    position: absolute;
+    margin-top: 25.5vh;
+    margin-left: 59vw;
+    backdrop-filter: blur(3px);
+    border-top: 1px solid rgba(255, 255, 255, 0.294);
+    border-left: 1px solid rgba(255, 255, 255, 0.294);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.09);
+    transform: skewY(12deg); 
+    
+}
