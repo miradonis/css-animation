@@ -1,16 +1,21 @@
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
     margin: 0;
+    padding: 0;
 }
 
-
+/* KUGELN MIT SCHIMMER */
 .ball1 {
     position: absolute;
     top: 13vh;
     left: 8vw;
-    width: 9vw;
-    height: 18vh;
+    width: calc(8% - 9px);
+    height: calc(16% - 8px);
     border-radius: 50%;
     box-shadow:
       inset 0 0 50px #fff,
@@ -18,9 +23,9 @@ body {
       inset -20px 0 80px #0ff,
       inset 20px 0 300px #f0f,
       inset -20px 0 300px #0ff,
-      0 0 50px #fff,
-      -10px 0 80px #f0f,
-      10px 0 80px #0ff;
+      0 0 20px rgb(185, 152, 152),
+      -10px 0 40px rgb(88, 3, 88),
+      10px 0 40px rgb(5, 104, 104);
   }
 
   .ball2 {
@@ -31,13 +36,13 @@ body {
     height: 10vh;
     border-radius: 50%;
     box-shadow:
-      inset 0 0 40px rgb(229, 230, 201),
-      inset 20px 0 80px rgb(197, 250, 72),
+      inset 0 0 20px rgb(229, 230, 201),
+      inset 20px 0 60px rgb(197, 250, 72),
       inset -20px 0 80px rgb(0, 255, 55),
       inset 20px 0 300px rgb(13, 99, 17),
       inset -20px 0 300px rgb(255, 0, 0),
-      0 0 50px #fff,
-      -10px 0 80px rgb(217, 255, 0),
+      0 0 50px rgb(117, 114, 114),
+      -10px 0 80px rgb(69, 80, 10),
       10px 0 80px rgb(15, 82, 82);
   }
 
@@ -49,14 +54,14 @@ body {
     height: 6vh;
     border-radius: 50%;
     box-shadow:
-      inset 0 0 50px #fff,
+      inset 0 0 30px #fff,
       inset 20px 0 80px rgb(255, 0, 43),
-      inset -20px 0 80px rgb(255, 115, 0),
+      inset -20px 0 80px rgb(15, 66, 175),
       inset 20px 0 300px #f0f,
       inset -20px 0 300px #0ff,
-      0 0 60px rgb(255, 132, 132),
-      -10px 0 80px rgb(255, 0, 43),
-      10px 0 80px #0ff;
+      0 0 20px rgb(255, 132, 132),
+      -5px 0 20px rgb(255, 0, 43),
+      5px 0 20px #0ff;
   }
 
   .ball4 {
@@ -67,17 +72,18 @@ body {
     height: 9vh;
     border-radius: 50%;
     box-shadow:
-      inset 0 0 50px #fff,
-      inset 20px 0 80px rgb(0, 204, 255),
-      inset -20px 0 80px #0ff,
-      inset 20px 0 300px #f0f,
-      inset -20px 0 300px #0ff,
-      0 0 50px #fff,
-      -10px 0 80px rgb(55, 0, 255),
-      10px 0 80px #0ff;
+      inset 0 0 30px #fff,
+      inset 20px 0 80px rgb(194, 3, 12),
+      inset -10px 0 80px #0ff,
+      inset 10px 0 300px rgb(40, 9, 179),
+      inset -10px 0 300px rgb(199, 231, 13),
+      0 0 50px rgb(102, 100, 100),
+      -10px 0 30px rgb(21, 4, 83),
+      10px 0 30px rgb(21, 4, 83);
   }
 
 
+  /* FORMEN UND GLAS */
 .element1 {
     height: 40vh;
     width: 10vw;
@@ -155,4 +161,76 @@ body {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.09);
     transform: skewY(12deg); 
     
+}
+
+
+/* LINIEN MIT SCANNER */
+.line1 {
+  position: absolute;
+  background-color: rgb(4, 36, 36);
+  box-shadow: 0px 0px 12px aqua;
+  width: 4px;
+  height: calc(99% - 10px);
+  top: 1vh;
+  left: 2vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.line1 .scanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    height: 20px;
+    border-radius: 50%;
+    animation: scanner-loop 3s ease-in-out infinite;
+  }
+
+  .line2 {
+    position: absolute;
+    background-color: rgb(4, 36, 36);
+    box-shadow: 0px 0px 12px aqua;
+    width: 4px;
+    height: calc(99% - 10px);
+    top: 1vh;
+    left: 98vw;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .line2 .scanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    height: 20px;
+    border-radius: 50%;
+    animation: scanner-loop 3s ease-in-out infinite;
+  }
+
+
+
+
+.line .scanner
+{
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  height: 50%;
+}
+@keyframes scanner-loop
+{
+  0% 
+  {
+    top: 0;
+  }
+  50%
+  {
+    top: 100%;
+  }
+  100%
+  {
+    top: 0;
+  }
 }
