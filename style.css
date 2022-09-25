@@ -1,12 +1,12 @@
 
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
     background-color: black;
-    margin: 0;
-    padding: 0;
 }
 
 /* KUGELN MIT SCHIMMER */
@@ -85,7 +85,7 @@ body {
 
   /* FORMEN UND GLAS */
 .element1 {
-    height: 40vh;
+    padding-top: 340px;
     width: 10vw;
     background-image: linear-gradient( #c0fb2d, #ff724c, #4efd54);
     position: absolute;
@@ -95,7 +95,7 @@ body {
 }
 
 .element2 {
-    height: 40vh;
+    padding-top: 340px;
     width: 10vw;
     background-image: linear-gradient( #dd85d7, #41fdfe, #ff6f52);
     position: absolute;
@@ -104,7 +104,7 @@ body {
 }
 
 .element3 {
-    height: 40vh;
+    padding-top: 340px;
     width: 10vw;
     background-image: linear-gradient( #ad0afd, #fffe7a, #ff474c);
     position: absolute;
@@ -123,7 +123,7 @@ body {
     height: 42vh;
     width: 12vw;
     position: absolute;
-    margin-top: 25.5vh;
+    margin-top: 28vh;
     margin-left: 32.9vw;
     backdrop-filter: blur(2px);
     border-top: 1px solid rgba(255, 255, 255, 0.294);
@@ -138,7 +138,7 @@ body {
     height: 42vh;
     width: 12vw;
     position: absolute;
-    margin-top: 25.5vh;
+    margin-top: 28vh;
     margin-left: 45.9vw;
     backdrop-filter: blur(1px);
     border-top: 1px solid rgba(255, 255, 255, 0.294);
@@ -153,7 +153,7 @@ body {
     height: 42vh;
     width: 12vw;
     position: absolute;
-    margin-top: 25.5vh;
+    margin-top: 28vh;
     margin-left: 59vw;
     backdrop-filter: blur(3px);
     border-top: 1px solid rgba(255, 255, 255, 0.294);
